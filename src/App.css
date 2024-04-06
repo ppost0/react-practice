@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.feed-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shiba-feed-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding-top: 20px;
+}

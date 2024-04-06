@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import './Feed.jsx';
+import '../App.css';
 
 const Feed = () => {
 
@@ -24,7 +24,7 @@ const Feed = () => {
 
         for (let i = 0; i < data.length; i++) {
           shibaPics.push(
-            <img src={data[i]} alt='Random Shiba' key={i}/>
+            <img src={data[i]} alt='Random Shiba' key={i} width='400px' />
           );
         }
 
@@ -50,8 +50,9 @@ const Feed = () => {
       <div className='button-container'>
         <button onClick={refreshPage}>Refresh</button>
       </div>
-
-      {shibaFeed}
+      <div className='shiba-feed-container'>
+        {shibaFeed}
+      </div>
 
     </section>
   )
