@@ -14,6 +14,10 @@ function App() {
     setValue(value-1);
   }
 
+  const setValToFifty = () => {
+    setValue(50);
+  }
+
   const scrollToData = () => {
     document.querySelector('.data-handling-container').scrollIntoView();
   }
@@ -26,7 +30,7 @@ function App() {
       <button onClick={increment}>Increment</button>
       <button onClick={decrement}>Decrement</button>
       <button onClick={scrollToData}>Data Section</button>
-      <Feed/>
+      <Feed value={value} setValToFifty={setValToFifty}/>
       <DataHandling/>
 
 

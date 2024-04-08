@@ -20,7 +20,7 @@ const DataHandling = () => {
         for (let i = 0; i < data.data.length; i++) {
           console.log(i);
           entries.push(
-            <p className='data-entry'>
+            <p className='data-entry' key={i}>
               {JSON.stringify(data.data[i])}
             </p>
           )

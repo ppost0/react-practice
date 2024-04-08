@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import '../App.css';
 
-const Feed = () => {
+const Feed = (props) => {
 
   const [shibaFeed, setShibaFeed] = useState('');
 
@@ -9,7 +9,7 @@ const Feed = () => {
     window.location.reload();
   }
 
-
+  const {setValToFifty} = props;
 
   useEffect(() => {
 
@@ -45,6 +45,7 @@ const Feed = () => {
 
   return(
     <section className='feed-container'>
+      <button onClick={setValToFifty}>Set Counter to 50 with prop drilling</button>
       <h1>Here's the feed:</h1>
       <div className='button-container'>
         <button onClick={refreshPage}>Refresh</button>
