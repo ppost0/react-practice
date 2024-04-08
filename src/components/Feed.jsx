@@ -16,9 +16,8 @@ const Feed = () => {
     const fetchShiba = async () => {
 
       try {
-        const response = await fetch('http://shibe.online/api/shibes?count=10&urls=true&httpsUrls=true');
+        const response = await fetch('http://shibe.online/api/shibes?count=4&urls=true&httpsUrls=true');
         const data = await response.json();
-        console.log(data);
 
         const shibaPics = [];
 
