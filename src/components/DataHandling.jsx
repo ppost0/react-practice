@@ -48,6 +48,7 @@ const DataHandling = () => {
       <h1>Data Handling section:</h1>
       <div>
         {currentData}
+        {currentData.map(() => <div>HELLO!!!</div>)}
       </div>
     </section>
   )
